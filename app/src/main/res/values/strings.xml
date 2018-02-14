@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dormee</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_my_place">My Place</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_search">Search</string>
+    <string name="title_filter">Filter</string>
+</resources>
