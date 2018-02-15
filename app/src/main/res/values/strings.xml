@@ -8,4 +8,7 @@
     <string name="title_inbox">Inbox</string>
     <string name="title_search">Search</string>
     <string name="title_filter">Filter</string>
+    <string name="dot">•</string>
+    <string name="apartments">Apartments</string>
+    <string name="flatshares">Flatshares</string>
 </resources>
