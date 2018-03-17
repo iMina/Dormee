@@ -1,21 +1,14 @@
 package com.example.android.dormee;
 
-import android.app.ActionBar;
-import android.app.FragmentTransaction;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity implements SavedFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity
+//        implements SavedFragment.OnFragmentInteractionListener
+{
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    /*private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -36,29 +29,27 @@ public class MainActivity extends AppCompatActivity implements SavedFragment.OnF
             }
             return false;
         }
-    };
+    };*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.flatshare_view);
+      /*  BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        navigation.setSelectedItemId(R.id.navigation_saved);
-
-
+        navigation.setSelectedItemId(R.id.navigation_saved);*/
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
 //        return super.onCreateOptionsMenu(menu);
-    }
+    }*/
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_bar_search:
@@ -69,25 +60,25 @@ public class MainActivity extends AppCompatActivity implements SavedFragment.OnF
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
 
-    @Override
+    /*@Override
     public void onFragmentInteraction(Uri uri) {
 
     }
 
-    /**
-     * Called when pointer capture is enabled or disabled for the current window.
-     *
-     * @param hasCapture True if the window has pointer capture.
-     */
+    *//**
+ * Called when pointer capture is enabled or disabled for the current window.
+ *
+ * @param hasCapture True if the window has pointer capture.
+ *//*
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
-    }
+    }*/
 
-    public void onTabSelected(View view) {
+   /* public void onTabSelected(View view) {
         switch (view.getId()) {
             case R.id.tab_apartments:
                 return;
@@ -95,5 +86,5 @@ public class MainActivity extends AppCompatActivity implements SavedFragment.OnF
                 return;
 
         }
-    }
+    }*/
 }

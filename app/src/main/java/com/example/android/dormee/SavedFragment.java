@@ -109,7 +109,7 @@ public class SavedFragment extends ListFragment {
             Apartment apartment = objects.get(position);
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
 
-            View view = inflater.inflate(R.layout.list_item, null);
+            View view = inflater.inflate(R.layout.saved_list_item, null);
             ((TextView) view.findViewById(R.id.item_name)).setText(apartment.getName());
             ((TextView) view.findViewById(R.id.item_price)).setText(apartment.getPrice() + " EGP");
             ((TextView) view.findViewById(R.id.item_rooms)).setText(apartment.getNoOfRooms() + " ROOMS");

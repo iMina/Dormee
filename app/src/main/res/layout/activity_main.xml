@@ -7,27 +7,29 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.dormee.MainActivity">
 
+    <!-- Tab layout for saved items, to be moved to saved fragment
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/saved_tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/saved_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <android.support.design.widget.TabItem
-            android:id="@+id/tab_apartments"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onTabSelected"
-            android:text="@string/apartments" />
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_apartments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onTabSelected"
+                android:text="@string/apartments" />
 
-        <android.support.design.widget.TabItem
-            android:id="@+id/tab_flatshares"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onTabSelected"
-            android:text="@string/flatshares" />
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_flatshares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onTabSelected"
+                android:text="@string/flatshares" />
 
-    </android.support.design.widget.TabLayout>
+        </android.support.design.widget.TabLayout>
+    -->
 
     <fragment
         android:id="@+id/fragment_container"
@@ -35,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/navigation"
-        app:layout_constraintTop_toBottomOf="@id/saved_tabs"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_saved" />
 
 
