@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
 
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-        setContentView(R.layout.flatshare_view);
+        setContentView(R.layout.discover_list_item);
       /*  BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.setSelectedItemId(R.id.navigation_saved);*/

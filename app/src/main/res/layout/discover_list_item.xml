@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardBackgroundColor="@color/cardview_light_background"
-    app:cardCornerRadius="12dp"
+    app:cardCornerRadius="2dp"
     app:cardElevation="4dp">
 
     <android.support.constraint.ConstraintLayout
@@ -15,10 +14,10 @@
         <ImageView
             android:id="@+id/discover_item_img"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:scaleType="centerCrop"
             android:src="@drawable/flat"
-            app:layout_constraintDimensionRatio="W,16:9"
+            app:layout_constraintDimensionRatio="H,16:9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -122,8 +121,8 @@
 
         <ImageView
             android:id="@+id/discover_icon_heart"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_margin="16dp"
             android:src="@drawable/heart_pink"
             app:layout_constraintEnd_toEndOf="parent"
@@ -131,8 +130,8 @@
 
         <ImageView
             android:id="@+id/discover_icon_check"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_margin="16dp"
             android:src="@drawable/check_circle"
             app:layout_constraintEnd_toEndOf="parent"
